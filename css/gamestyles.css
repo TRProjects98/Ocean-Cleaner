@@ -1,0 +1,103 @@
+
+.bginicio{
+    font-family: 'Ubuntu';
+    text-align: center;
+    background-image: url("../imagens/fundo.png");
+    background-size: cover;
+
+}
+
+.bgrules{
+    background-image: url("../imagens/fundo.png");
+    background-size: cover;
+}
+
+
+
+.corlogo{
+    background-color: white;
+    border-radius: 50%;
+}
+
+.marginbuttontop{
+    margin-top: 220px;
+}
+
+
+.bghistory{
+    background-color: black;
+}
+
+
+#bgmove {
+    background-image: url("../imagens/fundo_jogo.png");
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+
+/*Elementos*/
+#exp1{ position: absolute; }
+#exp2{ position: absolute; }
+#exp3{ position: absolute; }
+#exp4{ position: absolute; }
+#exp5{ position: absolute; }
+#exp6{ position: absolute; }
+#exp7{ position: absolute; }
+#exp8{ position: absolute; }
+
+/*Loading page*/
+.carrega {
+    position: absolute;
+    text-align: center;
+    display: inline;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: white;
+    z-index: 99;
+    font-size: 3rem;
+    font-family: 'Ubuntu';
+}
+
+.carrega.hidden{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#a_carregar{
+    font-family: Ubuntu;
+    font-size: 3rem;
+}
+
+.loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #7ab9dc;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.buttonagain{
+    font-family: 'Ubuntu';
+    font-size: 1.5rem;
+    border-radius: 15px;
+
+}
